@@ -1,107 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Login Page</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
     }
 
     .login-box {
-      background-color: #ffffff;
-      padding: 40px 30px;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 360px;
-      box-sizing: border-box;
-      text-align: center;
-    }
-
-    .login-box img {
-      width: 80px;
-      margin-bottom: 20px;
+      background-color: #fff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
     }
 
     h2 {
-      margin-bottom: 24px;
-      color: #333;
-    }
-
-    label {
-      display: block;
-      text-align: left;
-      font-weight: 500;
-      margin: 10px 0 4px;
-      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     input[type="text"],
     input[type="password"] {
       width: 100%;
-      padding: 12px;
-      margin-bottom: 16px;
+      padding: 10px;
+      margin: 8px 0 16px 0;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
-      transition: border-color 0.3s;
-    }
-
-    input:focus {
-      border-color: #4CAF50;
-      outline: none;
+      border-radius: 4px;
     }
 
     button {
       width: 100%;
-      padding: 12px;
+      padding: 10px;
       background-color: #4CAF50;
       border: none;
       color: white;
       font-size: 16px;
-      border-radius: 6px;
+      border-radius: 4px;
       cursor: pointer;
-      transition: background-color 0.3s;
     }
 
     button:hover {
-      background-color: #43a047;
+      background-color: #45a049;
     }
 
     .signup-link {
-      margin-top: 16px;
+      text-align: center;
+      margin-top: 10px;
       font-size: 14px;
     }
 
     .signup-link a {
       color: #4CAF50;
       text-decoration: none;
-      font-weight: bold;
-    }
-
-    .signup-link a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <div class="login-box">
-    <img src="https://via.placeholder.com/80" alt="Logo" />
     <h2>Login</h2>
     <form>
       <label for="username">Username</label>
-      <input type="text" id="username" name="username" placeholder="Enter your username" required />
+      <input type="text" id="username" name="username" placeholder="Enter username" required>
 
       <label for="password">Password</label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
 
       <button type="submit">Login</button>
 
